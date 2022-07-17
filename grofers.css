@@ -1,0 +1,316 @@
+/* aa root e css na variable banavine use kareli che (multiple time same css use karva mate) */
+:root {
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+}
+* {
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-transform: capitalize;
+    font-family: 'Catamaran', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    height: 6rem;
+    justify-content: center;
+    align-items: center;
+    z-index: +1;
+    position: fixed;
+    box-shadow: -10px 5px 40px rgb(32 21 6);
+}
+.left {
+    padding: 10px;
+    margin: 20px;
+    width: 25%;
+}
+div i {
+    color: var(--orange);
+}
+div h1 {
+    color: var(--black);
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2.2rem;
+}
+.mid {
+    /* display:flex;
+flex-direction: row; */
+    margin: 28px;
+    padding: 9px;
+    width: 70%;
+
+    align-items: center;
+    justify-content: center;
+}
+.ul li {
+    list-style: none;
+    display: inline-block;
+
+}
+ul li a {
+    color: var(--black);
+    text-decoration: wheat;
+    /* padding: 1.5rem; */
+    padding: 1.3rem 1.5rem;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.5rem;
+}
+ul li a:hover {
+    transition: 0.3s;
+    color: var(--orange);
+}
+.right {
+    width: 15%;
+    padding: 1rem;
+}
+.icons div {
+    height: 0.5rem;
+    width: 2.3rem;
+    color: var(--black);
+    font-size: 2rem;
+    padding: 0.3rem;
+    margin-left: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+}
+/* .icons div:hover{
+background-color: var(--black);
+} */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./image/banner-bg.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    font-family: 'Catamaran', sans-serif;
+}
+.content {
+    text-align: center;
+    width: 60rem;
+}
+.content h3 {
+    color: var(--black);
+    font-size: 3rem;
+}
+.content h3 span {
+    color: var(--orange);
+}
+.content p {
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.btn {
+    border: 2px solid;
+    border-color: var(--black);
+    border-radius: 0.5rem;
+    padding: 7px 35px;
+    font-size: 1.5rem;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.btn:hover{
+    transition: 0.4s;
+    background-color: var(--orange);
+    color: whitesmoke;
+}
+
+div>a {
+    text-decoration: none;
+}
+.feature {
+    /* justify-content: center; */
+    padding-top: 2.3rem;
+    background-color: whitesmoke;
+}
+.feature1{
+    /* justify-content: center; */
+    padding-top: 2.3rem;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
+    margin-bottom: -1rem;
+}
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    /* padding-top: 1.6rem; */
+    /* padding-bottom: 1rem; */
+    color: var(--black);
+}
+.heading span {
+    color: white;
+    background-color: var(--orange);
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    padding: 0px 1.5rem;
+    scroll-snap-type:none;
+    /* clip-path: ellipse(130px 140px at 10% 20%); */
+    /* clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); */
+    /* clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z'); */
+    display: inline-block;
+}
+.containerfeature{
+    display: flex;
+    /* box-shadow: -3px -2px 8px rgb(32, 21, 6); */
+    align-items: center;
+    flex-flow: row;
+    margin: 2rem 0rem;
+    margin-left: 9rem;
+    margin-right: 8rem;
+    width: fit-content;
+    /* background-color: whitesmoke; */
+}
+.containerproducts{
+    display: flex;
+    /* box-shadow: -3px -2px 8px rgb(32, 21, 6); */
+    align-items: center;
+    flex-flow: row;
+    margin: 2rem 0rem;
+    margin-left: 7.3rem;
+    margin-right: 8rem;
+    width: fit-content;
+}
+.containercatagories{
+    display: flex;
+    /* box-shadow: -3px -2px 8px rgb(32, 21, 6); */
+    align-items: center;
+    flex-flow: row;
+    margin: 1rem 8rem;
+    width: fit-content;
+}
+.containerreview{
+    display: flex;
+    /* box-shadow: -3px -2px 8px rgb(32, 21, 6); */
+    align-items: center;
+    flex-flow: row;
+    margin: 1rem 8rem;
+    margin-left: 9.3rem;
+    margin-right: 8rem;
+    width: fit-content;
+}
+.containerblogs{
+    display: flex;
+    /* box-shadow: -3px -2px 8px rgb(32, 21, 6); */
+    align-items: center;
+    flex-flow: row;
+    margin: 1rem 5.7rem;
+    width: fit-content;
+}
+.box {
+    padding: 1rem 3rem;
+    margin: 2rem 3rem;
+    border: 2px solid ;
+    border-color:white;
+    text-align: center;
+    background-color: white;
+    /* background-color: rgb(245, 207, 156); */
+    border-radius: 1rem;
+}
+div>p{
+    padding-bottom: 1.3rem;
+}
+.para{
+color: var(--light-color);
+    font-size: 1.1rem;
+    padding: 1rem 0;
+}
+.img{
+  height: 13rem;
+  width: 16rem;
+}
+#box3{
+    padding-top: 0rem;
+}
+#box4{
+ height: 29rem;
+ width: 23rem;
+}
+.stars{
+ padding-bottom: 1rem;
+}
+#box5{
+margin: 2.5rem 2rem;
+padding: -1rem 3.4rem;
+}
+.img5 {
+height: 11rem;
+width: 15rem;
+}
+#catagory{
+margin-left: 1.5rem;
+}
+#customer1,#customer2,#customer3{
+height: 15rem;
+width: 15rem;
+object-fit: cover;
+/* border-radius: 50%; */
+border-radius: 50%;
+}
+#box7{
+margin: 2rem 1rem;
+padding: 1rem 1rem;
+}
+.img7{
+height: 20rem;
+ width: 32rem;
+display: block;
+}
+#date{
+padding-left: 18rem;
+}
+.heading1{
+    text-align: center;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--black);
+}
+.contact{
+    background-color:white ;
+    display: flex;
+
+    justify-content: space-evenly;
+}
+.con{
+    padding: 2rem 5rem;
+   
+}
+.con:hover{
+    transition: 0.2s;
+    cursor: pointer;
+    /* background-color: var(--orange); */
+    color: var(--orange);
+}
+
+
+
+/* this is for quick links - dislplay:inline; ....that's why i use ul li over here...and for navigation i 
+i use ul as a class (line number :70)  there is display:inline-block..... */
+ul li {
+    list-style: none;
+}
+h2,h1{
+    color: var(--black);
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2.2rem;
+}
+
+.payment{
+    display: inline-block;
+    /* padding-top: 100px; */
+    padding-bottom: 50px;
+    
+}
+
